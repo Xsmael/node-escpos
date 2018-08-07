@@ -21,7 +21,8 @@ escpos.Image.load(__dirname + '/tux.png', function(image){
     .raster(image, 'dh')
     .raster(image, 'dwdh')
 
-    .cut();
+    .cut()
+    .close();
   
   });
 
